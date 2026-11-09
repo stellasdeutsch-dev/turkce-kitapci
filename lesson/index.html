@@ -573,6 +573,23 @@ body:not(.has-ad) .foot{padding-bottom:30px}
 .vz-lab{display:flex;flex-wrap:wrap;gap:6px 16px;justify-content:center;font-size:14px;color:var(--grey)}
 .vz-lab i{display:inline-block;width:12px;height:12px;border-radius:4px;margin-right:6px;vertical-align:-1px}
 @media (min-width:768px){.vz-row{grid-template-columns:1.3fr 1fr;gap:34px}}
+/* retention: checkpoints and bridge */
+.hk{hyphens:manual;-webkit-hyphens:manual}
+.cp{margin:64px 0 40px;display:grid;gap:14px}
+.cp-bar{height:8px;background:var(--mist2);border-radius:99px;overflow:hidden}
+.cp-bar i{display:block;height:100%;background:var(--blue);border-radius:99px}
+.cp p{font-size:clamp(17px,1.9vw,20px);line-height:1.5;max-width:46em;color:var(--grey);hyphens:manual;-webkit-hyphens:manual}
+.cp b{color:var(--ink);font-weight:800}
+.brg-s{padding-bottom:0}
+.brg{display:grid;grid-template-columns:minmax(0,320px) minmax(0,1fr);gap:clamp(32px,6vw,84px);align-items:center}
+.brg-ph{width:100%;height:auto;align-self:end;margin:0}
+.brg-t{padding:clamp(16px,3vw,40px) 0}
+.brg-l{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:12px;font-size:17px;line-height:1.45;hyphens:manual;-webkit-hyphens:manual}
+.brg .lead{hyphens:manual;-webkit-hyphens:manual}
+.brg-l li{display:flex;gap:10px;align-items:flex-start}
+.brg-l .ic{color:var(--blue);margin-top:2px;width:22px;height:22px}
+.brg-t .btn{margin-top:24px}
+@media (max-width:767px){.brg{grid-template-columns:minmax(0,1fr)}.brg-ph{max-width:320px;margin:0 auto;align-self:auto}}
 </style>
 </head>
 <body>
@@ -633,6 +650,7 @@ body:not(.has-ad) .foot{padding-bottom:30px}
 
 <section class="sec" id="story"><div class="wrap">
   <h2 class="rv">Как я купил книгу про баклажаны</h2>
+  <p class="lead hk">У слова <span class="w" lang="tr"><span class="r">kita<span class="ch">b</span></span><span class="a">ı</span></span> есть двойник. Пишется так же, значит другое. Кто это, скажу ближе к концу.</p>
   <div class="thread two">
     <div class="post rv"><p>Я зашел в книжный в Кадыкёе. В книжном стояла девушка. Девушка спросила, чем помочь.</p><p>Говорю, <span class="w" lang="tr">kitap</span> istiyorum. Хочу книгу. Показываю пальцем на полку. На полке роман.</p></div>
     <div class="post rv"><p>Девушка кивает. Идет к другой полке. Снимает книгу. Кладет передо мной.</p><p>Книга про баклажаны.</p></div>
@@ -732,6 +750,7 @@ body:not(.has-ad) .foot{padding-bottom:30px}
   <div class="dots"></div>
 </div></div></div></div>
 <div class="wrap">
+  <div class="cp"><div class="cp-bar" aria-hidden="true"><i style="width:35%"></i></div><p><b>Треть гайда позади.</b> Дальше вся таблица падежа. И две гласные, которые турок рядом не выносит.</p></div>
   <h3 class="rv">Вся таблица падежа</h3>
   <p class="txt rv">Строки появляются по очереди. На телефоне это карточки.</p>
   <div class="tbl" id="tbl"></div>
@@ -792,7 +811,7 @@ body:not(.has-ad) .foot{padding-bottom:30px}
   </svg>
   <figcaption class="vz-cap">Турецкая фраза стоит в очереди, и глагол в ней замыкающий.</figcaption>
 </figure></div>
-<div class="wrap"><h3 class="rv" style="margin-top:40px">Время меняется, палец остается</h3>
+<div class="wrap"><div class="cp"><div class="cp-bar" aria-hidden="true"><i style="width:65%"></i></div><p><b>Почти две трети позади.</b> Дальше падеж встречает время: вчера, сейчас, завтра. Потом шесть мест, где ломаются русскоязычные.</p></div><h3 class="rv" style="margin-top:40px">Время меняется, палец остается</h3>
   <p class="txt rv">Падежу все равно, вчера это было или завтра. Важно одно: понятно ли, какая книга.</p>
 </div>
 <div class="stage" id="stTime" data-n="4"><div class="pin"><div class="wrap"><div class="scene bluey">
