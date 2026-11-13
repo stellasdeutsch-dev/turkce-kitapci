@@ -590,6 +590,14 @@ body:not(.has-ad) .foot{padding-bottom:30px}
 .brg-l .ic{color:var(--blue);margin-top:2px;width:22px;height:22px}
 .brg-t .btn{margin-top:24px}
 @media (max-width:767px){.brg{grid-template-columns:minmax(0,1fr)}.brg-ph{max-width:320px;margin:0 auto;align-self:auto}}
+
+/* 3d */
+.art{max-width:640px}
+.hero-img{display:block;width:100%;height:auto;border-radius:28px;box-shadow:var(--sh)}
+.sv .sv3d{display:block;width:132px;height:132px;border-radius:20px;margin-bottom:6px;transition:transform .35s}
+.sv:hover .sv3d{transform:translateY(-4px) rotate(-3deg)}
+@media (min-width:1000px){.art{max-width:none}}
+@media (min-width:1000px){.h-grid{grid-template-columns:1.2fr .8fr;gap:44px}.hero h1{font-size:clamp(60px,5.6vw,84px)}}
 </style>
 </head>
 <body>
@@ -636,10 +644,7 @@ body:not(.has-ad) .foot{padding-bottom:30px}
       <p class="lead">Одна буква решает, уйдешь ты с романом или с книгой про баклажаны. Разбираем <b>винительный падеж</b>: что это, как собрать и где все ошибаются.</p>
     </div>
     <div class="art" aria-hidden="true">
-      <svg class="sh" viewBox="0 0 372 470"><path d="M20 470V186C20 84 94 12 186 12s166 72 166 174v284z" fill="#fff"/><path d="M40 470V190C40 100 106 34 186 34s146 66 146 156v280z" fill="#ECEEF3"/><rect x="66" y="58" width="24" height="92" rx="3" fill="#1F2433" stroke="#D8DCE6"/><rect x="93" y="66" width="16" height="84" rx="3" fill="#DCE6FA" stroke="#D8DCE6"/><rect x="112" y="50" width="16" height="100" rx="3" fill="#DCE6FA" stroke="#D8DCE6"/><rect x="131" y="58" width="16" height="92" rx="3" fill="#2C62D9" stroke="#D8DCE6"/><rect x="150" y="42" width="16" height="108" rx="3" fill="#1F2433" stroke="#D8DCE6"/><rect x="169" y="58" width="16" height="92" rx="3" fill="#2C62D9" stroke="#D8DCE6"/><rect x="188" y="66" width="28" height="84" rx="3" fill="#DCE6FA" stroke="#D8DCE6"/><rect x="219" y="58" width="16" height="92" rx="3" fill="#E9B872" stroke="#D8DCE6"/><rect x="238" y="42" width="16" height="108" rx="3" fill="#2C62D9" stroke="#D8DCE6"/><rect x="257" y="66" width="20" height="84" rx="3" fill="#DCE6FA" stroke="#D8DCE6"/><rect x="280" y="50" width="20" height="100" rx="3" fill="#1F2433" stroke="#D8DCE6"/><rect x="50" y="150" width="272" height="9" rx="3" fill="#C9CFDC"/><rect x="66" y="206" width="20" height="84" rx="3" fill="#DCE6FA" stroke="#D8DCE6"/><rect x="89" y="198" width="24" height="92" rx="3" fill="#2C62D9" stroke="#D8DCE6"/><rect x="116" y="190" width="20" height="100" rx="3" fill="#2C62D9" stroke="#D8DCE6"/><rect x="139" y="206" width="16" height="84" rx="3" fill="#DCE6FA" stroke="#D8DCE6"/><rect x="158" y="182" width="20" height="108" rx="3" fill="#E9B872" stroke="#D8DCE6"/><rect x="181" y="190" width="28" height="100" rx="3" fill="#1F2433" stroke="#D8DCE6"/><rect x="212" y="190" width="28" height="100" rx="3" fill="#FFFFFF" stroke="#D8DCE6"/><rect x="243" y="198" width="20" height="92" rx="3" fill="#E9B872" stroke="#D8DCE6"/><rect x="266" y="206" width="20" height="84" rx="3" fill="#DCE6FA" stroke="#D8DCE6"/><rect x="50" y="290" width="272" height="9" rx="3" fill="#C9CFDC"/><rect x="66" y="330" width="28" height="100" rx="3" fill="#E9B872" stroke="#D8DCE6"/><rect x="97" y="330" width="28" height="100" rx="3" fill="#DCE6FA" stroke="#D8DCE6"/><rect x="128" y="346" width="16" height="84" rx="3" fill="#DCE6FA" stroke="#D8DCE6"/><rect x="147" y="338" width="28" height="92" rx="3" fill="#FFFFFF" stroke="#D8DCE6"/><rect x="178" y="322" width="20" height="108" rx="3" fill="#1F2433" stroke="#D8DCE6"/><rect x="201" y="346" width="16" height="84" rx="3" fill="#DCE6FA" stroke="#D8DCE6"/><rect x="220" y="330" width="24" height="100" rx="3" fill="#E9B872" stroke="#D8DCE6"/><rect x="247" y="322" width="24" height="108" rx="3" fill="#DCE6FA" stroke="#D8DCE6"/><rect x="274" y="346" width="28" height="84" rx="3" fill="#2C62D9" stroke="#D8DCE6"/><rect x="50" y="430" width="272" height="9" rx="3" fill="#C9CFDC"/></svg>
-      <svg class="pz pz1" viewBox="0 0 110 100"><path fill="currentColor" d="M14 30H38a14 14 0 1 1 24 0H86V52a14 14 0 1 1 0 24V98H14Z"/></svg>
-      <svg class="pz pz2" viewBox="0 0 110 100"><path fill="currentColor" d="M14 30H38a14 14 0 1 1 24 0H86V52a14 14 0 1 1 0 24V98H14Z"/></svg>
-      <svg class="pz pz3" viewBox="0 0 110 100"><path fill="currentColor" d="M14 30H38a14 14 0 1 1 24 0H86V52a14 14 0 1 1 0 24V98H14Z"/></svg>
+      <img class="hero-img" src="../media/hero-3d.webp" alt="" width="1280" height="720" fetchpriority="high">
     </div>
     <div class="h-t">
       <div class="cta"><a class="btn" href="#story">Зайти в книжный</a></div>
@@ -1090,7 +1095,7 @@ function finish(){var s=$('#score');s.classList.add('on');$('#scoreN').textConte
 /* появление */
 if(G&&ST&&!RM){
  G.utils.toArray('.rv').forEach(function(e){G.to(e,{opacity:1,y:0,duration:.8,ease:'power3.out',scrollTrigger:{trigger:e,start:'top 92%',once:true}})});
- G.to('.pz1',{y:-16,rotate:-8,duration:3.4,yoyo:true,repeat:-1,ease:'sine.inOut'});G.to('.pz2',{y:14,rotate:9,duration:2.9,yoyo:true,repeat:-1,ease:'sine.inOut'});G.to('.pz3',{y:-11,rotate:-12,duration:3.8,yoyo:true,repeat:-1,ease:'sine.inOut'});
+ 
  G.utils.toArray('.bridge').length;
 }else{$$('.rv').forEach(function(e){e.style.opacity=1;e.style.transform='none'})}
 
